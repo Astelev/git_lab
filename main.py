@@ -9,7 +9,7 @@ import random
 class UfoControl(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('01.ui', self)
+        uic.loadUi('UI.ui', self)
         self.pushButton.clicked.connect(self.repaint)
     def paintEvent(self, event):
         qp = QPainter()
